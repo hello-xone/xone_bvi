@@ -1,0 +1,23 @@
+/* 系统字体作为基础字体 */
+:root {
+  --font-fallback: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+/* 基础字体设置 */
+html {
+  font-family: "Figtree", var(--font-fallback);
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 禁用字体合成和优化 */
+* {
+  font-synthesis: none;
+  font-optical-sizing: none;
+  font-feature-settings: "kern" 1;
+}

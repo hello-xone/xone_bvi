@@ -1,0 +1,36 @@
+.numberflip-digit-container {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  transition-property: opacity;
+  transition-duration: 200ms; /* Could be ommitted. The duration is set dynamically  */
+  &.dot {
+    &,
+    & * {
+      width: 10px;
+    }
+  }
+}
+
+.numberflip-digit-container-value {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 1000ms; /* Could be ommitted. The duration is set dynamically  */
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Needed for the numbers to be spaced evenly between one another. */
+.numberflip-digit-container-value span {
+  text-align: center;
+}
+
+@keyframes numberflip-animation-fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
