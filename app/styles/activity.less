@@ -1,0 +1,42 @@
+.slick-prev {
+  position: absolute;
+  z-index: 2;
+  left: 15px !important;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -238px;
+    left: -15px;
+    width: 134px;
+    height: 495px;
+    background: linear-gradient(
+      90deg,
+      rgba(6, 6, 6, 0.2),
+      rgba(255, 255, 255, 0)
+    );
+  }
+  &::before {
+    color: black !important;
+  }
+}
+
+.slick-next {
+  position: absolute;
+  right: 15px !important;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -238px;
+    right: -15px;
+    width: 134px;
+    height: 495px;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0),
+      rgba(6, 6, 6, 0.2)
+    );
+  }
+  &::before {
+    color: black !important;
+  }
+}
