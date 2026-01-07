@@ -59,11 +59,13 @@ export const loader = async () => {
         return res;
       }),
       daily({
-        start: dayjs().subtract(7, "day").valueOf(),
+        start: dayjs().subtract(180, "day").valueOf(),
         end: new Date().valueOf(),
         type: 1,
       }).then((res) => {
-        const personData = res.result; //.filter((item) => item.releaseType === 1);
+        const personData = res.result
+          .filter((item) => item.countStr !== "0" && Number(item.countStr) > 0)
+          .slice(-30);
 
         return {
           personRelease: personData.map((item) =>
