@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Figtree";
+  src: local("Figtree"), url("/font/Figtree.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "nobold";
+  src: local("Figtree-Regular"),
+    url("/font/Figtree-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+html,
+body {
+  font-family: "Figtree", -apple-system, BlinkMacSystemFont, sans-serif;
+  @apply bg-[#F2F4F8] text-black;
+
+  @media (prefers-color-scheme: light) {
+    color-scheme: light;
+  }
+}
+
+[data-bold] {
+  font-family: "Figtree";
+}
+
+[data-nobold] {
+  font-family: "nobold";
+}
+
+[data-reach-dialog-overlay] {
+  z-index: 9999 !important;
+  pointer-events: all;
+}

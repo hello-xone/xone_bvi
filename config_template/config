@@ -1,0 +1,31 @@
+VITE_APP_BASE_URL = ""
+
+# release api url
+VITE_APP_RELEASE_BASE_URL = ""
+
+# upload image url frefix
+VITE_APP_IMAGE_BASE_URL=https://xo-image-af92h8.s3.ap-southeast-1.amazonaws.com
+
+# contract address  -No need to change
+VITE_APP_XOC_MIGRATE_ADDRESS=0x4FCC87E8f71B766A234418E04a05b1A3DEe80A6F
+VITE_APP_XOC_RELEASE_ADDRESS=0xCB741e27f9C3742636fa8474a981b702FCE6602E
+VITE_APP_WXOC_ADDRESS=0x8e1a838EAfdB267542F2d04ef628f9bed7E5748B
+
+# network id -No need to change
+VITE_APP_TEST_CHAIN_ID=33772211
+VITE_APP_MAIN_CHAIN_ID=3721
+
+# rpc url -No need to change
+VITE_APP_TEST_RPC_URL=https://rpc-testnet.xone.plus
+VITE_APP_MAIN_RPC_URL=https://rpc.xone.org
+
+# block explorer url -No need to change
+VITE_APP_BLOCK_EXPLORER=https://xonescan.com
+VITE_APP_BLOCK_EXPLORER_API=https://api.xonescan.com
+VITE_APP_NFT_EXPLORER=https://nft-api.tokenup.org
+
+# luma api key
+VITE_APP_LUMA_API_KEY=secret-Jh5voSAViEwur1Hj2X9Jq8dmi
+
+# developer
+VITE_APP_DEVELOPER_URL=https://developer.xonetest.plus
