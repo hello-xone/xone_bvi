@@ -394,28 +394,9 @@ export default function NeedRelease({ curlEpoch }: { curlEpoch: number }) {
         </Box>
 
         <Flex ml={{ base: 0, md: "auto" }}>
-          {connectStatus == ConnectStatus.Connected && (
-            <Button
-              data-nobold
-              ml="auto"
-              mt={{ base: "10px", md: 0 }}
-              rounded="8px"
-              bg="white"
-              pl="20px"
-              pr="12px"
-              py="16px"
-              color="#000"
-              font={{ base: "12px", md: "18px" }}
-              fontWeight="600"
-              onClick={handleAbstainClick}
-            >
-              {t("Abstain")}
-              <ArrowIcon />
-            </Button>
-          )}
           <Button
             data-nobold
-            ml={connectStatus === ConnectStatus.Connected ? "20px" : "0"}
+            ml="auto"
             mt={{ base: "10px", md: 0 }}
             rounded="8px"
             bg="white"
