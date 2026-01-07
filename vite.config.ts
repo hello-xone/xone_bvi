@@ -13,6 +13,14 @@ export default defineConfig({
     target: "esnext",
     minify: true,
     cssMinify: true,
+    sourcemap: false,
+    rollupOptions: {
+      onwarn(warning, warn) {
+        if (warning.code === 'SOURCEMAP_ERROR') return;
+        if (warning.code === 'MODULE_LEVEL_DIRECTIVE') return;
+        warn(warning);
+      }
+    }
   },
   define: {
     'process.env': process.env

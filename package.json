@@ -48,7 +48,7 @@
     "react-share": "^5.2.2",
     "react-slick": "^0.30.3",
     "react-svg": "^16.3.0",
-    "recharts": "^2.15.3",
+    "recharts": "^3.0.0",
     "remix-hook-form": "^7.1.0",
     "remix-i18next": "^7.2.1",
     "remix-utils": "^8.7.0",
