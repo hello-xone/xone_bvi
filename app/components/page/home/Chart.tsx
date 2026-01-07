@@ -180,7 +180,7 @@ export default function Chart(props: Props) {
         smooth: true,
         lineStyle: {
           width: 2,
-          color: "rgba(253, 141, 144, 0)",
+          color: "#1CB619",
         },
         showSymbol: false,
         areaStyle: {
