@@ -3,7 +3,13 @@ node_modules
 /.cache
 /build
 .env
+.env.local
+.env.production.local
 .DS_Store
 **/.DS_Store
 
 sync.sh
+
+# Vercel
+.vercel
+.output

@@ -9,6 +9,11 @@ declare module "@remix-run/node" {
 }
 
 export default defineConfig({
+  build: {
+    target: "esnext",
+    minify: true,
+    cssMinify: true,
+  },
   define: {
     'process.env': process.env
   },
@@ -46,6 +51,14 @@ export default defineConfig({
       /^@tokenup\/.*/,
       'styled-components',
       '@emotion/react',
+    ]
+  },
+  optimizeDeps: {
+    include: [
+      '@chakra-ui/react',
+      '@emotion/react',
+      'react',
+      'react-dom',
     ]
   }
 });
